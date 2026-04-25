@@ -1,0 +1,5 @@
+{
+    "powerquery.client.additionalSymbolsDirectories": [
+        "d:/Agentic AI Projects/RL-Route-Optimization-main/.vscode/excel-pq-symbols"
+    ]
+}
