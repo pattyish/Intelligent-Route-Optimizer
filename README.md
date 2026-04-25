@@ -172,6 +172,36 @@ This will sequentially run:
 - **Performance plots** - Episode rewards and convergence curves
 - **Route visualization** - Graphical display of optimal paths on network map
 
+## 📷 Project In Action
+
+```mermaid
+flowchart LR
+   A[Load Network and Traffic Settings] --> B[Initialize Environment]
+   B --> C{Run Algorithms}
+
+   C --> D[Dijkstra Baseline]
+   C --> E[Q-Learning Training]
+   C --> F[SARSA Training]
+
+   D --> G[Shortest Path Output]
+   E --> H[Learned Policy and Route]
+   F --> I[Learned Policy and Route]
+
+   H --> J[Compare Metrics]
+   I --> J
+   G --> J
+
+   J --> K[Distance or Time Cost]
+   J --> L[Convergence Episodes]
+   J --> M[Compute Time]
+
+   K --> N[Performance Plots and Route Visualization]
+   L --> N
+   M --> N
+```
+
+This high-level flow shows how the project runs from network setup to final route and performance comparison across Dijkstra, Q-Learning, and SARSA.
+
 ## 🧪 Test Cases & Examples
 
 ### Network Configurations
@@ -354,20 +384,4 @@ We welcome contributions! To contribute:
 - Improve visualization tools
 - Enhance code documentation
 - Fix bugs and improve performance
-
-## 📝 License
-
-This project is provided for educational and research purposes. Please see the LICENSE file for details.
-
-## ✨ Acknowledgments
-
-- **SUMO Project** - For excellent traffic simulation framework
-- **NetworkX Community** - For robust graph processing tools
-- **Contributors** - Thanks to all who test and improve this project
-
----
-
-**Last Updated:** April 2026  
-**Status:** Active Development  
-**Maintainer:** Open for community contributions
 
