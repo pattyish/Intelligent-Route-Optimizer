@@ -174,6 +174,12 @@ This will sequentially run:
 
 ## 📷 Project In Action
 
+![Project Results Dashboard](Images/image.png)
+
+Figure: End-to-end result snapshot showing route comparison, learning curves, convergence, traffic overlay, before-vs-after training, and runtime metrics.
+
+### High-Level Execution Flow
+
 ```mermaid
 flowchart LR
    A[Load Network and Traffic Settings] --> B[Initialize Environment]
